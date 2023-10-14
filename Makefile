@@ -14,7 +14,7 @@ CLD=sdldz80
 OBJCPY=sdobjcopy
 
 ASFLAGS=-plosgff
-CFLAGS=-mez80_z80 -Iinclude/ -Isrc/include/ --reserve-regs-iy --std-c11 --fomit-frame-pointer
+CFLAGS=-mez80_z80 -Iinclude/ -Isrc/include/ --reserve-regs-iy --std-c11 --fno-omit-frame-pointer
 CLINK=--no-std-crt0 -mez80_z80 --code-loc 100
 
 all: a.bin
